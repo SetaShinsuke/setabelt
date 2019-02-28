@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/footer_loading"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="42dp">
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textColor="#c1c1c1"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/footer_end"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="@string/no_more"
+        android:textColor="#c1c1c1"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/footer_error"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="@string/net_error"
+        android:textColor="#c1c1c1"
+        android:textSize="12sp"/>
+</FrameLayout>
